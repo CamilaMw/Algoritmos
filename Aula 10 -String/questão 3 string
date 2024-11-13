@@ -1,0 +1,23 @@
+/*Reescreva o programa da questão 2 para que seja
+impresso apenas as consoantes.*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    char palavra[] = "batatinha";
+    int tamanho = strlen(palavra);
+    int i;
+
+    printf("Consoantes na palavra: ");
+    for (i = 0; i < tamanho; i++) {
+        char letra = palavra[i];
+        if (letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u') {
+            printf("%c ", letra);
+        }
+    }
+    
+    return 0;
+}
